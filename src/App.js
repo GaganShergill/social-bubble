@@ -29,7 +29,7 @@ class App extends React.Component {
   }
 
   set_user_details() {
-    axios.get('http://localhost:8000/user-details/', {
+    axios.get('https://social-bubble-backend.herokuapp.com/user-details/', {
       headers: {
         'Authorization': localStorage.getItem('accessToken')
       }

@@ -62,7 +62,7 @@ class Listing extends React.Component {
     let data;
     if (this.state.choice === 'events') {
       this.contentDuration.classList.remove('hide');
-      axios.get('http://localhost:8000/events/?q=' + this.state.filter, {
+      axios.get('https://social-bubble-backend.herokuapp.com/events/?q=' + this.state.filter, {
         headers: {
           'Authorization': localStorage.getItem('accessToken')
         }
@@ -80,7 +80,7 @@ class Listing extends React.Component {
       })
     } else if (this.state.choice === 'activities') {
       this.contentDuration.classList.remove('hide');
-      axios.get('http://localhost:8000/activities/?q=' + this.state.filter, {
+      axios.get('https://social-bubble-backend.herokuapp.com/activities/?q=' + this.state.filter, {
         headers: {
           'Authorization': localStorage.getItem('accessToken')
         }
@@ -98,7 +98,7 @@ class Listing extends React.Component {
       })
     } else if (this.state.choice === 'trips') {
       this.contentDuration.classList.remove('hide');
-      axios.get('http://localhost:8000/trips/?q=' + this.state.filter, {
+      axios.get('https://social-bubble-backend.herokuapp.com/trips/?q=' + this.state.filter, {
         headers: {
           'Authorization': localStorage.getItem('accessToken')
         }

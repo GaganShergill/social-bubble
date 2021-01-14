@@ -66,7 +66,7 @@ class Register extends React.Component {
   handleLoginSubmit(e) {
     e.preventDefault()
     axios.post(
-      'http://127.0.0.1:8000/login/', {
+      'https://social-bubble-backend.herokuapp.com/login/', {
         email: this.state.email,
         password: this.state.password,
         formError: ''
@@ -93,7 +93,7 @@ class Register extends React.Component {
       return;
     }
     axios.post(
-      'http://localhost:8000/register/', {
+      'https://social-bubble-backend.herokuapp.com/register/', {
         first_name: this.state.first_name.toLowerCase(),
         email: this.state.email.toLowerCase(),
         password: this.state.password,
