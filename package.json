@@ -13,6 +13,7 @@
     "axios": "^0.21.0",
     "bootstrap": "^5.0.0-alpha2",
     "gsap": "^3.5.1",
+    "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-gsap": "^2.2.1",
