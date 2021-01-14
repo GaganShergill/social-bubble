@@ -1,0 +1,17 @@
+.about-page-one {
+  animation: fade-in .8s ease-in;
+}
+
+.about-page-two {
+  animation: fade-in .8s ease-in;
+  position: relative;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

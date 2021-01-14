@@ -1,0 +1,119 @@
+.page-transition {
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  right: 5%;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  background-color: #49b8ef;
+  box-shadow: 5px 10px 4px #888888;
+  height: calc(4rem + 2vmin);
+  z-index: 2;
+  transition: all .3s ease-in-out;
+}
+
+.no-jQuery:hover {
+  width: 52%;
+  height: calc(4rem + 2.5vmin);
+  right: 4%;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.page-transition:hover .footer h1 {
+  transform: scale(1);
+}
+
+.footer h1 {
+  padding: 0 2vmin;
+  position: relative;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  word-spacing: 3px;
+  font-size: calc(1.3rem + 0.8vmax);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.logo-word {
+  font-weight: 700;
+}
+
+.arrow {
+  width: calc(1.5rem + 3vmin) !important;
+}
+
+.arrow.left-side {
+  position: relative;
+  left: 2.5vmin;
+}
+
+.arrow.right-side {
+  position: relative;
+  right: 2.5vmin;
+}
+
+
+.arrow.center {
+  position: fixed;
+  left: 47%;
+  padding: 0 2.3vmin;
+  width: calc(1.2rem + 2.4vmin) !important;
+  background-color: #49b8ef;
+  border-radius: 0 0 10em 10em;
+  box-sizing: content-box;
+  cursor: pointer;
+  border-width: 0 4px 4px 4px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.opaque {
+  opacity: 0.9;
+}
+
+.transition {
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity .6s ease-in-out;
+  -webkit-transition: opacity .6s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity .6s ease-in-out;
+  -webkit-transition: opacity .6s ease-in-out;
+}
+
+.full-width {
+  width: 100%;
+  right: 0;
+}
+
+@media (max-width: 767.98px) {
+  .page-transition {
+    right: 0 !important;
+    width: 100% !important;
+  }
+  .no-jQuery:hover {
+    height: calc(5rem + 2vmin);
+  }
+  .arrow.center {
+    left: 44%;
+  }
+}
