@@ -84,6 +84,7 @@ class Register extends React.Component {
         password: '',
         formError: err.response.data['detail']
       })
+      console.log(err.response.data);
     })
   }
 
@@ -112,6 +113,7 @@ class Register extends React.Component {
         password: '',
         formError: err.response.data,
       })
+      console.log(err.response.data);
     })
   }
 
