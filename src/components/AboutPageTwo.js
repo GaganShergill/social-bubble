@@ -63,7 +63,7 @@ function AboutPageTwo() {
         <a href="https://www.instagram.com/gagan_shergill3/" target="_blank" rel="noopener noreferrer" className="mx-4">
           <i className="fa fa-instagram" aria-hidden="true"></i>
         </a>
-        <a href="https://www.linkedin.com/in/gagandeep-shergill/" target="_blank" rel="noopener noreferrer" className="mx-4">
+        <a href="https://www.linkedin.com/in/gaganshergill/" target="_blank" rel="noopener noreferrer" className="mx-4">
           <i className="fa fa-linkedin" aria-hidden="true"></i>
         </a>
       </div>
