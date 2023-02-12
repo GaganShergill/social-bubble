@@ -62,7 +62,7 @@ class Listing extends React.Component {
     let data;
     if (this.state.choice === 'events') {
       this.contentDuration.classList.remove('hide');
-      axios.get('https://social-bubble-backend.herokuapp.com/events/?q=' + this.state.filter, {
+      axios.get('https://social-bubble-backend.onrender.com/events/?q=' + this.state.filter, {
         headers: {
           'Authorization': localStorage.getItem('accessToken')
         }
@@ -80,7 +80,7 @@ class Listing extends React.Component {
       })
     } else if (this.state.choice === 'activities') {
       this.contentDuration.classList.remove('hide');
-      axios.get('https://social-bubble-backend.herokuapp.com/activities/?q=' + this.state.filter, {
+      axios.get('https://social-bubble-backend.onrender.com/activities/?q=' + this.state.filter, {
         headers: {
           'Authorization': localStorage.getItem('accessToken')
         }
@@ -98,7 +98,7 @@ class Listing extends React.Component {
       })
     } else if (this.state.choice === 'trips') {
       this.contentDuration.classList.remove('hide');
-      axios.get('https://social-bubble-backend.herokuapp.com/trips/?q=' + this.state.filter, {
+      axios.get('https://social-bubble-backend.onrender.com/trips/?q=' + this.state.filter, {
         headers: {
           'Authorization': localStorage.getItem('accessToken')
         }
@@ -199,7 +199,7 @@ class Listing extends React.Component {
 
           <div className="content__duration" onClick={this.handleDurationFilterClick}>
             <button name="today">Today</button>
-            <button name="tommorrow">Tommorrow</button>
+            <button name="tomorrow">Tommorrow</button>
             <button name="week">This Week</button>
             <button name="month">This Month</button>
           </div>

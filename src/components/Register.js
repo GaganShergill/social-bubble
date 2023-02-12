@@ -32,7 +32,7 @@ class Register extends React.Component {
 
     if (passwordField.length < 8) {
       this.setState({
-        passwordError: "password must be atleast 8 characters long"
+        passwordError: "password must be at least 8 characters long"
       })
       validationSuccess = false
     } else {
@@ -66,7 +66,7 @@ class Register extends React.Component {
   handleLoginSubmit(e) {
     e.preventDefault()
     axios.post(
-      'https://social-bubble-backend.herokuapp.com/login/', {
+      'https://social-bubble-backend.onrender.com/login/', {
         email: this.state.email,
         password: this.state.password,
         formError: ''
@@ -94,7 +94,7 @@ class Register extends React.Component {
       return;
     }
     axios.post(
-      'https://social-bubble-backend.herokuapp.com/register/', {
+      'https://social-bubble-backend.onrender.com/register/', {
         first_name: this.state.first_name.toLowerCase(),
         email: this.state.email.toLowerCase(),
         password: this.state.password,
